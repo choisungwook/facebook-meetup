@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podip
+spec:
+  selector:
+    matchLabels:
+      app: podip
+  template:
+    metadata:
+      labels:
+        app: podip
+    spec:
+      containers:
+      - name: podip
+        image: nginx
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
