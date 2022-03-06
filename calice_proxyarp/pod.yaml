@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: calice-client
+spec:
+  nodeName: k8s-w1
+  containers:
+  - name: netshoot
+    image: nicolaka/netshoot
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: calice-server
+spec:
+  nodeName: k8s-w1
+  containers:
+  - name: netshoot
+    image: nicolaka/netshoot
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
