@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server
+spec:
+  nodeName: k8s-w1
+  containers:
+  - name: netshoot
+    image: nicolaka/netshoot
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client
+spec:
+  nodeName: k8s-w1
+  containers:
+  - name: netshoot
+    image: nicolaka/netshoot
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
