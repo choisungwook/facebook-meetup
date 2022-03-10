@@ -7,6 +7,8 @@ spec:
   containers:
   - name: netshoot
     image: nicolaka/netshoot
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
     resources:
       limits:
         memory: "64Mi"
@@ -21,6 +23,8 @@ spec:
   containers:
   - name: netshoot
     image: nicolaka/netshoot
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
     resources:
       limits:
         memory: "64Mi"
