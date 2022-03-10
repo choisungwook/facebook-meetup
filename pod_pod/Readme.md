@@ -1,0 +1,1 @@
+* [같은노드간 pod통신](same_node.yaml)
