@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: server
 spec:
-  nodeName: k8s-w1
+  nodeName: k8s-w2
   containers:
   - name: netshoot
     image: nicolaka/netshoot
@@ -19,7 +19,7 @@ kind: Pod
 metadata:
   name: client
 spec:
-  nodeName: k8s-w2
+  nodeName: k8s-w1
   containers:
   - name: netshoot
     image: nicolaka/netshoot
