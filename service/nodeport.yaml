@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-nodeport-test
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-nodeport-test
