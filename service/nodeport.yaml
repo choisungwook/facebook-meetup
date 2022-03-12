@@ -13,10 +13,10 @@ spec:
         app: nginx-nodeport-test
     spec:
       containers:
-      - name: netshoot
-        image: nicolaka/netshoot
-        command: ["/bin/sh"]
-        args: ["-c", "while true; do echo hello; sleep 10;done"]
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
         resources:
           limits:
             memory: "64Mi"
