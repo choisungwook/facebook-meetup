@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: coredns-example
+  labels:
+    name: coredns-example
+spec:
+  containers:
+  - name: coredns-example
+    image: nginx
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
+    ports:
+      - containerPort: 80
