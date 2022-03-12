@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodeport-dnat
+  labels:
+    name: nodeport-dnat
+spec:
+  nodeName: k8s-w1
+  containers:
+  - name: whoami
+    image: traefik/whoami
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
+    ports:
+      - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeport-dnat
+spec:
+  type: NodePort
+  selector:
+    name: nodeport-dnat
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 31010
