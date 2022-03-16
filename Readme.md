@@ -23,3 +23,6 @@ vagrant ssh k8s-w0
 vagrant ssh k8s-w1
 vagrant ssh k8s-w2
 ```
+
+# 예제 목차
+* [네트워크 네임스페이스 ping통신](./network_namespace/Readme.md)
