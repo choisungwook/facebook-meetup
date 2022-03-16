@@ -30,3 +30,9 @@ ip netns exec BLUE ip -c -br addr show
 ip netns exec RED ping 11.11.11.3 -c 2
 ip netns exec BLUE ping 11.11.11.2 -c 2
 ```
+
+# 예제 삭제
+```sh
+ip netns del RED
+ip netns del BLUE
+```
