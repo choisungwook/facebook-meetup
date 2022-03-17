@@ -19,7 +19,7 @@ ip netns exec BLUE ip route add default via 11.11.11.1
 
 # iptables 마스커레이드 설정
 ```sh
-iptables -t nat -D POSTROUTING -s 11.11.11.0/24 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 11.11.11.0/24 -j MASQUERADE
 ```
 
 # 네임스페이스에서 다시 구글서버로 ping통신
