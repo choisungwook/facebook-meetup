@@ -6,7 +6,7 @@
 * vagrant로 설치를 자동화 했습니다.
 * 리눅스 vagrantfile과 쿠버네티스 vagrantfile 두종류가 있습니다.
   * [리눅스 vagrantfile 링크](./vagrantfiles/linux/Readme.md)
-  * [쿠버네티스 vagrantfile 링크](./vagrantfiles/k8s/Vagrantfile)
+  * [쿠버네티스 vagrantfile 링크](./vagrantfiles/k8s/Readme.md)
 
 # 예제 목차
 * 네트워크 네임스페이스 예제
