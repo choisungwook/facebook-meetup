@@ -44,7 +44,6 @@ ip netns exec BLUE ip link set dev veth3 up
 
 # 네임스페이스간 ping통신
 * iptables forward설정이 되지 않아서 실패합니다.
-> vagrant로 쿠버네티스를 설치하신 분은 calico가 설치되어서 통신이 가능합니다.
 ```sh
 ip netns exec RED ping 11.11.11.3 -c 2
 ip netns exec BLUE ping 11.11.11.2 -c 2
