@@ -5,6 +5,7 @@
 ```sh
 # 생성
 ip link add br0 type bridge
+ip addr add 11.11.11.1/24 dev br0
 
 # 확인
 brctl show
