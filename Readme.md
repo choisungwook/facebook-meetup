@@ -2,7 +2,7 @@
 * facebook 쿠버네티스 meetup 발표에서 사용되는 예제입니다.
 * 발표날짜: 22.3.19
 
-# 쿠버네티스 설치
+# 실습 인프라 설치
 * vagrant로 설치를 자동화 했습니다.
 * 리눅스 vagrantfile과 쿠버네티스 vagrantfile 두종류가 있습니다.
   * [리눅스 vagrantfile 링크](./vagrantfiles/linux/Readme.md)
