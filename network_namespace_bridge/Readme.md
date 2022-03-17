@@ -61,3 +61,10 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 ip netns exec RED ping 11.11.11.3 -c 2
 ip netns exec BLUE ping 11.11.11.2 -c 2
 ```
+
+# 삭제
+```sh
+ip netns delete RED
+ip netns delete BLUE
+ip link delete br0
+```
