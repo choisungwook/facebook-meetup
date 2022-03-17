@@ -27,3 +27,11 @@ iptables -t nat -A POSTROUTING -s 11.11.11.0/24 -j MASQUERADE
 ip netns exec RED ping 8.8.8.8
 ip netns exec BLUE ping 8.8.8.8
 ```
+
+# 삭제
+```sh
+ip netns delete RED
+ip netns delete BLUE
+ip link delete br0
+iptables -t nat -D POSTROUTING -s 11.11.11.0/24 -j MASQUERADE
+```
