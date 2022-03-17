@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: only-netshoot
+spec:
+  containers:  
+  - name: netshoot
+    image: nicolaka/netshoot
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
