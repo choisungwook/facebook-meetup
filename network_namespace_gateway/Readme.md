@@ -1,6 +1,6 @@
 # 개요
 * 네트워크 네임스페이스와 외부통신 예제입니다.
-> 유투브 링크: https://www.youtube.com/watch?v=_gZyN3tOggo
+> 유투브 링크: https://youtu.be/_gZyN3tOggo
 
 # 준비
 * 네트워크 네임스페이스와 브릿지 연결이 구축이 완료되어 있어야 합니다.
