@@ -19,7 +19,15 @@ ip netns exec BLUE ip addr add 11.11.11.3/24 dev veth2
 # 인터페이스 활성화
 ip netns exec RED ip link set dev veth1 up
 ip netns exec BLUE ip link set dev veth2 up
+```
 
+# 네임스페이스 확인
+```sh
+ip netns ls
+```
+
+# 인터페이스 확인
+```sh
 # 인터페이스 확인
 ip netns exec RED ip -c -br addr show
 ip netns exec BLUE ip -c -br addr show
