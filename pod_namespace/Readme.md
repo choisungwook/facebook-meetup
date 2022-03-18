@@ -11,7 +11,7 @@ kubectl apply -f only_netshoot.yaml
 ## 2.2 포트 확인
 * netshoot컨테이너에서 80번 포트가 없는 것을 확인합니다.
 ```sh
-kubectl exec -it same-namespace -c netshoot -- ss -ntlp
+kubectl exec -it only-netshoot -c netshoot -- ss -ntlp
 ```
 
 ## 2.3 예제 삭제
