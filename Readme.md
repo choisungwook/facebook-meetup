@@ -19,4 +19,4 @@
   * [같은 노드에 있는 파드간 통신](./pod_pod/same_node.md)
   * [다른 노드에 있는 파드간 통신](./pod_pod/different_node.yaml)
   * [서비스 파드간 통신](./service/)
-  * [coredns](./coredns/coredns.yaml)
+  * [coredns](./coredns/Readme.md)
