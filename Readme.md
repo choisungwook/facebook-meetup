@@ -17,3 +17,6 @@
 * 쿠버네티스 예제
   * [파드안 컨테이너간 통신](./pod_namespace/Readme.md)
   * [같은 노드에 있는 파드간 통신](./pod_pod/same_node.md)
+  * [다른 노드에 있는 파드간 통신](./pod_pod/different_node.yaml)
+  * [서비스 파드간 통신](./service/)
+  * [coredns](./coredns/coredns.yaml)
