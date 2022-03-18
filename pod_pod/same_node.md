@@ -27,5 +27,5 @@ watch iptables -v --numeric --table filter --list FORWARD | egrep '(cali-FORWARD
 # ping 통신 확인
 * client -> server pod로 ping통신
 ```sh
-kubectl exec -it clinet -- ping <serverip>
+kubectl exec -it client -- ping <serverip>
 ```
