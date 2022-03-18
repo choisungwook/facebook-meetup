@@ -23,3 +23,9 @@ tcpdump -i <server pod에 연결된 calice> -nn
 # iptables tcpdump
 watch iptables -v --numeric --table filter --list FORWARD | egrep '(cali-FORWARD|pkts)'
 ```
+
+# ping 통신 확인
+* client -> server pod로 ping통신
+```sh
+kubectl exec -it clinet -- ping <serverip>
+```
