@@ -32,3 +32,19 @@ tcpdump -i $CoreDNSveth -nn udp port 53
 ```sh
 kubectl exec -it dns-query -- dig google.com
 ```
+
+# 3. 두번째 예제 - 서비스 디스커버리
+## 3.1 예제 pod, serice 배포
+```sh
+kubectl apply -f coredns.yaml
+```
+
+## 3.2 pod를 도메인으로 접근
+```sh
+kubectl exec -it coredns-example -- curl <pod-ip>.default.pod.cluster.local
+```
+
+## 3.3 서비스를 도메인으로 접근
+```sh
+kubectl exec -it coredns-example -- curl coredns-example.default.svc.cluster.local
+```
