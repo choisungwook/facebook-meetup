@@ -2,6 +2,7 @@
 * kubedns 서비스(coredns) 예제 입니다.
 
 # 2. 첫번째 예제: coredns tcpdump
+> 유투브 영상: https://youtu.be/3srdG7mnVfY
 ## 2.1 coredns 배포 확인
 ```sh
 kubectl -n kube-system get po | grep dns
