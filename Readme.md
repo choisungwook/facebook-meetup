@@ -16,3 +16,4 @@
   * [네트워크 네임스페이스↔외부 ping통신](./network_namespace_gateway/Readme.md)
 * 쿠버네티스 예제
   * [파드안 컨테이너간 통신](./pod_namespace/Readme.md)
+  * [같은 노드에 있는 파드간 통신](./pod_pod/same_node.md)
