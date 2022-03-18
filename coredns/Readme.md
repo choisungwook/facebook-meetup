@@ -34,6 +34,7 @@ kubectl exec -it dns-query -- dig google.com
 ```
 
 # 3. 두번째 예제 - 서비스 디스커버리
+> 유투브 링크: https://youtu.be/Hma6rSit65A
 ## 3.1 예제 pod, serice 배포
 ```sh
 kubectl apply -f coredns.yaml
