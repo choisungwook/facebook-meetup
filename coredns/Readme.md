@@ -20,7 +20,7 @@ kubectl scale deployment -n kube-system coredns --replicas=1
 kubectl apply -f dnsquery.yaml
 ```
 
-## 2.3 coredns 패킷 확인
+## 2.4 coredns 패킷 확인
 * coredns에 연결된 calice 인터페이스에 tcpdump
 ```sh
 CoreDNSveth=$(calicoctl get workloadEndpoint -n kube-system | grep coredns | awk '{print $5}' | cut -d "/" -f 1)
