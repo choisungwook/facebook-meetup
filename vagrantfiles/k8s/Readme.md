@@ -3,7 +3,7 @@
 > vagrantfile은 KANS스터디에서 제공했습니다.
  
 # 구조
-![](../linux/infra.png)
+![](./infra.png)
 
 # 사용방법
 ```sh
